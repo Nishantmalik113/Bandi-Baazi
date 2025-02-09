@@ -1,12 +1,12 @@
 import { useState } from 'react'
 
 import Hero from './components/Hero'
-import Games from './components/games'
+
 import Gift from './components/Gift'
 import Songs from './components/Songs'
 import PhotoGallery from './components/PhotoGallery'
 import Places from './components/Places'
-import Modal from './components/modal'
+import Games from './components/Games'
 
 
 function App() {
