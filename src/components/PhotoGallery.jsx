@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { photos } from '../utils'
-import Modal from './modal'
+import Modal from './Modal'
 
 export default function PhotoGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState(-1)

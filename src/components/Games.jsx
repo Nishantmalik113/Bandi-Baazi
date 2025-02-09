@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Hint, letters, Word } from '../utils/game'
-import Modal from './modal'
+import Modal from './Modal'
 
 export default function Games() {
     let currentWord = Word

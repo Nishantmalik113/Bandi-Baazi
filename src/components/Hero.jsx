@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
-import Modal from './modal'
+import Modal from './Modal'
 
 
 export default function Hero() {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Modal from './modal'
+import Modal from './Modal'
 import { pins } from '../utils'
 
 export default function Places() {
