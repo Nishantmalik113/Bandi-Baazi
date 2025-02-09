@@ -13,28 +13,28 @@ export default function Gift() {
             x.style.opacity=0
             x.style.transition='1s'
           }}>
-            <img id='1' src="../src/gift/scratch.png" alt="" className='w-[350px] rounded-[30px]' /> 
+            <img id='1' src="../gift/scratch.png" alt="" className='w-[350px] rounded-[30px]' /> 
           </button>
           <button className='scratchCard2' onClick={()=>{
             let x = document.getElementById('2')
             x.style.opacity=0
             x.style.transition='1s'
           }}>
-            <img id='2' src="../src/gift/scratch.png" alt="" className='w-[350px] rounded-[30px]' />
+            <img id='2' src="../gift/scratch.png" alt="" className='w-[350px] rounded-[30px]' />
           </button>
           <button className='scratchCard3' onClick={()=>{
             let x = document.getElementById('3')
             x.style.opacity=0
             x.style.transition='1s'
           }}>
-            <img id='3' src="../src/gift/scratch.png" alt="" className='w-[350px] rounded-[30px]' />
+            <img id='3' src="../gift/scratch.png" alt="" className='w-[350px] rounded-[30px]' />
           </button>
           <button className='scratchCard4' onClick={()=>{
             let x = document.getElementById('4')
             x.style.opacity=0
             x.style.transition='1s'
           }}>
-            <img id='4' src="../src/gift/scratch.png" alt="" className='w-[350px] rounded-[30px]' />
+            <img id='4' src="../gift/scratch.png" alt="" className='w-[350px] rounded-[30px]' />
           </button>
       </div>
     </div>

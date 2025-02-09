@@ -57,7 +57,7 @@ export default function Songs() {
                     handlePauseAudio()
                     if(myAudio>0){setMyAudio(myAudio-=1)}
                 }}>
-                    <img className='w-[50px] md:max-w-[60px] bg-white rounded-4xl' src="../src/music/left-arrow.png" alt="" />
+                    <img className='w-[50px] md:max-w-[60px] bg-white rounded-4xl' src="../music/left-arrow.png" alt="" />
 
                 </button>
             </div>
@@ -83,7 +83,7 @@ export default function Songs() {
                     handlePauseAudio()
                     if(myAudio<9){setMyAudio(myAudio+=1)}
                 }}>
-                    <img className='w-[50px] md:max-w-[60px] bg-white rounded-4xl' src="../src/music/right-arrow.png" alt="" />
+                    <img className='w-[50px] md:max-w-[60px] bg-white rounded-4xl' src="../music/right-arrow.png" alt="" />
 
                 </button>
             </div>    

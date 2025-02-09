@@ -255,25 +255,25 @@ button:hover{
 /*Gift*/
 
 .scratchCard1{
-  background-image: url(../src/gift/gift1.png);
+  background-image: url(../gift/gift1.png);
   background-size: cover;
   border-radius: 30px;
 }
 
 .scratchCard2{
-  background-image: url(../src/gift/gift4.png);
+  background-image: url(../gift/gift4.png);
   background-size: contain;
   border-radius: 30px;
 }
 
 .scratchCard3{
-  background-image: url(../src/gift/gift3.png);
+  background-image: url(../gift/gift3.png);
   background-size: cover;
   border-radius: 30px;
 }
 
 .scratchCard4{
-  background-image: url(../src/gift/gift2.png);
+  background-image: url(../gift/gift2.png);
   background-size: contain;
   background-repeat: none;
   border-radius: 30px;

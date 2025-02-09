@@ -24,7 +24,7 @@ export default function Games() {
         } else{
             wrongGuessCount++
             let hangmanImage = document.querySelector(".hangman-box img")
-            hangmanImage.src = `../src/game/images/hangman-${wrongGuessCount}.svg`
+            hangmanImage.src = `../game/images/hangman-${wrongGuessCount}.svg`
         }
         let GuessesText = document.querySelector(".guess-text b")
         GuessesText.innerText = ` ${wrongGuessCount} / ${maxGuesses}`
@@ -32,14 +32,14 @@ export default function Games() {
         button.disabled = true
         let gameModal = document.querySelector(".game-modal")
         if(wrongGuessCount===maxGuesses)  {
-            gameModal.querySelector("img").src = "../src/game/images/lost.gif"
+            gameModal.querySelector("img").src = "../game/images/lost.gif"
             gameModal.querySelector("h4").innerText = "Game Over!"
             gameModal.querySelector("p").innerText = `The correct word was : `
             gameModal.querySelector(".p2").innerText =`${Word}`
             gameModal.classList.add("show")
         }
         if(correctLetters.length===currentWord.length)  {
-            gameModal.querySelector("img").src = "../src/game/images/victory.gif"
+            gameModal.querySelector("img").src = "../game/images/victory.gif"
             gameModal.querySelector("h4").innerText = "Congratulations"
             gameModal.querySelector("p").innerText = `You found the word : `
             gameModal.querySelector(".p2").innerText =`${Word}`
@@ -65,7 +65,7 @@ export default function Games() {
         </div>
         <div className='game-container'>
             <div className='hangman-box'>
-                <img src="../src/game/images/hangman-0.svg" alt="hangman-img" />
+                <img src="../game/images/hangman-0.svg" alt="hangman-img" />
                 <h1>Hangman Game</h1>
             </div>
             <div className='game-box flex flex-col items-center justify-center'>
