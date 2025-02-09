@@ -1,0 +1,519 @@
+@import "tailwindcss";
+
+:root{
+  --primary-text-color: #000000;
+  --background-color : #ffffff;
+
+
+  --primary-bg-color : #EAA1A5;
+  --secondary-bg-color : #C7CCE6;
+  --tertiary-bg-color : #91E9EF;
+
+
+  --selection-bg-color :#DDDADB;
+
+}
+.tester{
+  background-color: #EAA1A5;
+}
+
+@theme{
+  --color-FPink : #EAA1A5;
+  --color-pink : #FAA9BA;
+  --color-blue : #B2D3DC;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../Helvetica.ttf');
+}
+
+.heading{
+  font-family: 'helvetica' , sans-serif;
+  font-style: italic;
+  font-size: 4rem;
+  text-align: center;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+/*Layout*/
+.footer{
+  background-color: var(--background-color);
+  color: var(--primary-bg-color);
+  font-family: 'helvetica' , sans-serif;
+  font-style: italic;
+  z-index: 101;
+  height: 10vh;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.button-pg{
+  padding: 5px;
+  border-radius: 0.75rem;
+  color: gray;
+  font-size: large;
+}
+.button-selected{
+  color: rgb(132, 0, 255);
+  padding: 5px;
+  border-radius: 0.75rem;
+  font-size: large;
+}
+.button-selected:hover,
+.button-pg:hover{
+  cursor: pointer;
+  color: rgb(132, 0, 255);
+  transition: 0.5s ease;
+
+}
+
+/*Hero*/
+
+.hero2{
+  background-image: url(../ballons.png);
+  background-size: contain;
+}
+
+.overlay{
+  position: relative;
+  z-index: 101;
+  margin: auto;
+
+}
+
+.button-hero{
+  color: black;
+  width: 60px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 0.25rem;
+  background-color: var(--background-color);
+}
+
+.button-hero:hover{
+  cursor: pointer;
+}
+
+/*Modal*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 2rem;
+}
+
+.modal-underlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, black, transparent);
+  opacity: 0.9;
+  z-index: 99;
+  border: none;
+  width: 100%;
+  box-shadow: unset;
+}
+
+
+.modal-content {
+  position: relative;
+  z-index: 101;
+  max-width: fit-content;
+  width: 100%;
+  min-height: fit-content;
+  border-radius: 0.5rem;
+  background-color: var(--primary-text-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-modal{
+    width: 600px;
+    border-radius: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+    background-image: url(../public/ballons.png);
+}
+
+.btn {
+  position: relative;
+}
+
+/*PhotoGallery*/
+.ImageCard{
+  filter: grayscale(70%);
+  transition: transform 0.5s;
+  box-shadow: 0 15px 28px rgba(0,0,0,0.25),
+    0 10px 10px rgba(0,0,0,0.22);
+}
+
+.ImageCard:hover{
+  filter: none;
+  transition: 0.5s;
+  translate: 0px -6px;
+}
+
+/*Songs*/
+
+.songs-grid{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.songs-grid::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+/*Places*/
+
+.places{
+  background-image: url('../map.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #989898;
+  transition: 300ms ease-in;
+}
+
+.photos{
+  overflow-y: scroll;
+}
+
+.photos::-webkit-scrollbar{
+  display: none;
+}
+.pin1{
+  position: fixed;
+  left: 763px;
+  top: 525px;
+}
+.pin2{
+  position: fixed;
+  left: 775px;
+  top: 500px;
+}
+.pin3{
+  position: fixed;
+  left: 680px;
+  top: 505px;
+}
+.pin4{
+  position: fixed;
+  left: 633px;
+  top: 355px;
+}
+.pin5{
+  position: fixed;
+  left: 730px;
+  top: 495px;
+}
+.pin6{
+  position: fixed;
+  left: 728px;
+  top: 157px;
+}
+.pin7{
+  position: fixed;
+  left: 790px;
+  top: 200px;
+}
+.MainPin{
+  position: fixed;
+  left: 750px;
+  top: 510px;
+}
+
+.floatingPin{
+  display: none;
+  border-radius: 5rem;
+  transition: 0.8s;
+  background: linear-gradient(to bottom, black, #989898);
+}
+
+/*Gift*/
+
+.scratchCard1{
+  background-image: url(../src/gift/gift1.png);
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.scratchCard2{
+  background-image: url(../src/gift/gift4.png);
+  background-size: contain;
+  border-radius: 30px;
+}
+
+.scratchCard3{
+  background-image: url(../src/gift/gift3.png);
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.scratchCard4{
+  background-image: url(../src/gift/gift2.png);
+  background-size: contain;
+  background-repeat: none;
+  border-radius: 30px;
+}
+
+.scratchCard2:hover,
+.scratchCard3:hover,
+.scratchCard4:hover,
+.scratchCard1:hover{
+  cursor: pointer;
+  translate: 0px -10px;
+  transition: 0.5s;
+}
+
+
+/*Game*/
+
+.game-container{
+  width: 1050px;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: flex-end;
+  gap: 70px;
+  padding: 60px 40px;
+  border-radius: 10px;
+}
+
+.hangman-box{
+  max-width: 270px;
+}
+
+.hangman-box h1{
+  font-size: 1.45rem;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.word-display{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.word-display .letter{
+  width: 28px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-bottom: 3px solid black;
+}
+
+.word-display .letter.guessed{
+  border-color: transparent;
+  margin: -40px 0 35px;
+}
+
+.game-box h4{
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.game-box h4 b{
+  font-weight: 600;
+}
+
+.guess-text b{
+  color: red;
+}
+
+.game-box .keyboard{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.game-modal button,
+.keyboard button{
+  color: var(--background-color);
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  background-color: darkgreen;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.keyboard button{
+  padding: 7px;
+  width: calc(100% / 9 - 5px);
+}
+
+.keyboard button:disabled{
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.game-modal button:hover,
+.keyboard button:hover{
+  background-color: green;
+}
+
+
+.game-modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.6s ease;
+}
+.game-modal.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.game-modal .content{
+  background-color: var(--background-color);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.game-modal img{
+  max-width: 130px;
+  margin-bottom: 20px;
+}
+
+.game-modal h4{
+  font-size: 1.53rem;
+}
+
+.game-modal p{
+  font-size: 1.1rem;
+  margin: 15px 0 30px;
+  font-weight: 500;
+}
+
+.game-modal .p2{
+  text-transform: uppercase;
+  color: darkgreen;
+  font-weight: 600;
+}
+
+
+.game-modal button{
+  padding: 15px 23px;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .heading{
+    font-size: 3rem;
+  }
+
+  .hero2{
+    background-image: url(../public/ballons-ph.png);
+  }
+
+  .songs-grid{
+    margin-top: 5rem;
+  }
+
+  .places{
+    background-image: url("../map-small.png");
+    background-size: cover;
+  }
+  .pin1{
+    position: fixed;
+    left: 153px;
+    top: 557px;
+  }
+  .pin2{
+    position: fixed;
+    left: 162px;
+    top: 530px;
+  }
+  .pin3{
+    position: fixed;
+    left: 90px;
+    top: 535px;
+  }
+  .pin4{
+    position: fixed;
+    left: 54px;
+    top: 423px;
+  }
+  .pin5{
+    position: fixed;
+    left: 130px;
+    top: 530px;
+  }
+  .pin6{
+    position: fixed;
+    left: 126px;
+    top: 282px;
+  }
+  .pin7{
+    position: fixed;
+    left: 170px;
+    top: 320px;
+  }
+  .MainPin{
+    position: fixed;
+    left: 145px;
+    top: 535px;
+  }
+
+.game-container{
+  max-width: 400px;
+flex-direction: column;
+ padding: 30px 15px;
+ align-items: center;
+}
+  
+  .hangman-box{
+    max-width: 200px;
+  }
+  
+  .hangman-box h1{
+    display: none;
+  }
+
+}
