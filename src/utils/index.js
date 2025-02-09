@@ -27,14 +27,14 @@ export const photos = [
 ]
 
 export const pins = [
-    {"id": "1", "src":"../places/pondi.png", "desc":"Pondi", "link":''},
-    {"id": "2", "src":"../places/chennai.png", "desc":"Chennai", "link":''},
-    {"id": "3", "src":"../places/coorg.png", "desc":"Coorg", "link":''},
-    {"id": "4", "src":"../places/IITB.png", "desc":"IIT Bombay", "link":''},
-    {"id": "5", "src":"../places/bangalore.png", "desc":"Banglore", "link":''},
-    {"id": "6", "src":"../places/delhi.png", "desc":"Delhi", "link":''},
-    {"id": "7", "src":"../places/lucknow.png", "desc":"Lucknow", "link":''},
-    {"id": "8", "src":"../places/VIT.png", "desc":"VIT", "link":''}
+    {"id": "1", "src":"../places/pondi (2).png", "desc":"Pondi", "link":''},
+    {"id": "2", "src":"../places/chennai (2).png", "desc":"Chennai", "link":''},
+    {"id": "3", "src":"../places/coorg (2).png", "desc":"Coorg", "link":''},
+    {"id": "4", "src":"../places/IITB(2).png", "desc":"IIT Bombay", "link":''},
+    {"id": "5", "src":"../places/bangalore(2).png", "desc":"Banglore", "link":''},
+    {"id": "6", "src":"../places/delhi (2).png", "desc":"Delhi", "link":''},
+    {"id": "7", "src":"../places/lucknow (2).png", "desc":"Lucknow", "link":''},
+    {"id": "8", "src":"../places/VIT (2).png", "desc":"VIT", "link":''}
 ]
 
 export const settings = {
