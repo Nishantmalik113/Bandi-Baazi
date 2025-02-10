@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
-import { Hint, letters, Word } from '../utils/game'
+import { letters, random } from '../utils/game'
 import Modal from './Modal'
 
-export default function Games() {
+export default function Games(props) {
+    const {page, setPage} = props
+    const {Word, Hint} = random()
     let currentWord = Word
     var wrongGuessCount = 0
     const maxGuesses = 6
     let correctLetters = []
 
     const [resetModal, setResetModal] = useState(false)
+    const [showModal, SetShowModal]= useState(false)
+    const [victory, setVictory] = useState(false)
 
 
     async function initGame(clickedLetter, bId){
@@ -31,19 +35,16 @@ export default function Games() {
         let button = document.getElementById(bId)
         button.disabled = true
         let gameModal = document.querySelector(".game-modal")
+        
         if(wrongGuessCount===maxGuesses)  {
-            gameModal.querySelector("img").src = "../game/images/lost.gif"
-            gameModal.querySelector("h4").innerText = "Game Over!"
-            gameModal.querySelector("p").innerText = `The correct word was : `
-            gameModal.querySelector(".p2").innerText =`${Word}`
+            setVictory(false)
             gameModal.classList.add("show")
+            console.log(gameModal)
         }
         if(correctLetters.length===currentWord.length)  {
-            gameModal.querySelector("img").src = "../game/images/victory.gif"
-            gameModal.querySelector("h4").innerText = "Congratulations"
-            gameModal.querySelector("p").innerText = `You found the word : `
-            gameModal.querySelector(".p2").innerText =`${Word}`
+            setVictory(true)
             gameModal.classList.add("show")
+            console.log(gameModal)
         }
 
     }
@@ -54,13 +55,11 @@ export default function Games() {
         <h1 className='heading px-10 bg-white rounded-lg md:rounded-[5rem]'><i className='fa-solid fa-gamepad'></i> Game!</h1>
         <div className="game-modal">
             <div className="content">
-                <img className='mx-auto' src="" alt="" />
-                <h4></h4>
-                <p></p>
+                <img className='mx-auto' src={victory ? '../game/images/victory.gif' : '../game/images/lost.gif' } alt="" />
+                <h4>{victory ? 'Congratulations' : 'Game Over!'}</h4>
+                <p>{victory ?  'You found the word : ' : 'The correct word was : '}<b>{currentWord}</b></p>
                 <p className='p2'></p>
-                <button className="play-again" onClick={()=>{
-                     window.location.reload()
-                }}>Exit Game</button>
+                <button onClick={()=>setPage("Hero")}>Exit Game</button>
             </div>
         </div>
         <div className='game-container'>

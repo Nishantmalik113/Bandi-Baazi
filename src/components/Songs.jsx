@@ -21,7 +21,6 @@ export default function Songs() {
             return
         }
         else{
-            
             console.log(x,myAudio)
             x.pause()
             setPlaySong(false)

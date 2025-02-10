@@ -108,6 +108,8 @@ export const Wordist=[
 ]
 
 
-export const {Word, Hint} = Wordist[Math.floor(Math.random()*Wordist.length)];
-
+export function random(){ 
+  const {Word, Hint} = Wordist[Math.floor(Math.random()*Wordist.length)];
+  return {Word, Hint} ;
+}
 

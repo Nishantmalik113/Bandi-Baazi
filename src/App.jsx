@@ -60,7 +60,7 @@ function App() {
     <>
       {isAuthenticated && (<section className='app flex flex-col justify-between'>
         {(page === 'Hero')&&(<Hero />)}
-        {(page === 'Games')&&(<Games />)}
+        {(page === 'Games')&&(<Games page={page} setPage = {setPage} />)}
         {(page === 'Gift')&&(<Gift />)}
         {(page === 'Songs')&&(<Songs />)}
         {(page === 'PhotoGallery')&&(<PhotoGallery />)}

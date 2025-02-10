@@ -385,7 +385,6 @@ button:hover{
   background-color: green;
 }
 
-
 .game-modal{
   position: fixed;
   left: 0;
@@ -430,7 +429,7 @@ button:hover{
   font-weight: 500;
 }
 
-.game-modal .p2{
+.game-modal p b{
   text-transform: uppercase;
   color: darkgreen;
   font-weight: 600;
