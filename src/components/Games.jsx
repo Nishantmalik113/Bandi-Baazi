@@ -35,16 +35,19 @@ export default function Games(props) {
         let button = document.getElementById(bId)
         button.disabled = true
         let gameModal = document.querySelector(".game-modal")
-        
         if(wrongGuessCount===maxGuesses)  {
-            setVictory(false)
+            gameModal.querySelector("img").src = "../game/images/lost.gif"
+            gameModal.querySelector("h4").innerText = "Game Over!"
+            gameModal.querySelector("p").innerText = `The correct word was : `
+            gameModal.querySelector(".p2").innerText =`${Word}`
             gameModal.classList.add("show")
-            console.log(gameModal)
         }
         if(correctLetters.length===currentWord.length)  {
-            setVictory(true)
+            gameModal.querySelector("img").src = "../game/images/victory.gif"
+            gameModal.querySelector("h4").innerText = "Congratulations"
+            gameModal.querySelector("p").innerText = `You found the word : `
+            gameModal.querySelector(".p2").innerText =`${Word}`
             gameModal.classList.add("show")
-            console.log(gameModal)
         }
 
     }
@@ -55,10 +58,9 @@ export default function Games(props) {
         <h1 className='heading px-10 bg-white rounded-lg md:rounded-[5rem]'><i className='fa-solid fa-gamepad'></i> Game!</h1>
         <div className="game-modal">
             <div className="content">
-                <img className='mx-auto' src={victory ? '../game/images/victory.gif' : '../game/images/lost.gif' } alt="" />
-                <h4>{victory ? 'Congratulations' : 'Game Over!'}</h4>
-                <p>{victory ?  'You found the word : ' : 'The correct word was : '}<b>{currentWord}</b></p>
-                <p className='p2'></p>
+                <img className='mx-auto' src='' alt="" />
+                <h4></h4>
+                <div><p></p><p className='p2'></p></div>
                 <button onClick={()=>setPage("Hero")}>Exit Game</button>
             </div>
         </div>

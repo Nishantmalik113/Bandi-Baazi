@@ -429,7 +429,7 @@ button:hover{
   font-weight: 500;
 }
 
-.game-modal p b{
+.game-modal .p2 {
   text-transform: uppercase;
   color: darkgreen;
   font-weight: 600;
