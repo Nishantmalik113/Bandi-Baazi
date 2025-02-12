@@ -48,7 +48,7 @@ export default function Places() {
               <p className='text-xl'>{pins[showInfo].desc}</p>
               <button className='text-lg border-1 
               border-black p-3 text-white 
-              bg-black hover:text-black hover:bg-transparent hover:transition-all duration-[800ms]'><a href={pins[showInfo].link}>Click To View Album</a></button>
+              bg-black hover:text-black hover:bg-transparent hover:transition-all duration-[800ms]'><a target="_blank" href={pins[showInfo].link}>Click To View Album</a></button>
           </div>   
         </Modal>)
       }

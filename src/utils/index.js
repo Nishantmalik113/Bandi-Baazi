@@ -27,14 +27,14 @@ export const photos = [
 ]
 
 export const pins = [
-    {"id": "1", "src":"../places/pondi (2).png", "desc":"Pondi", "link":''},
-    {"id": "2", "src":"../places/chennai (2).png", "desc":"Chennai", "link":''},
-    {"id": "3", "src":"../places/coorg (2).png", "desc":"Coorg", "link":''},
-    {"id": "4", "src":"../places/IITB(2).png", "desc":"IIT Bombay", "link":''},
+    {"id": "1", "src":"../places/pondi (2).png", "desc":"Pondi", "link":'https://photos.app.goo.gl/ydAbKX3owDC8W87C7'},
+    {"id": "2", "src":"../places/chennai (2).png", "desc":"Chennai", "link":'https://photos.app.goo.gl/ZeemviKwgM2REi7R6'},
+    {"id": "3", "src":"../places/coorg (2).png", "desc":"Coorg", "link":'https://photos.app.goo.gl/ouQA11stQJfsECz78'},
+    {"id": "4", "src":"../places/IITB(2).png", "desc":"IIT Bombay", "link":'https://photos.app.goo.gl/JiNDE9fRmMmdEyi5A'},
     {"id": "5", "src":"../places/bangalore(2).png", "desc":"Banglore", "link":''},
     {"id": "6", "src":"../places/delhi (2).png", "desc":"Delhi", "link":''},
-    {"id": "7", "src":"../places/lucknow (2).png", "desc":"Lucknow", "link":''},
-    {"id": "8", "src":"../places/VIT (2).png", "desc":"VIT", "link":''}
+    {"id": "7", "src":"../places/lucknow (2).png", "desc":"Lucknow", "link":'https://photos.app.goo.gl/wgGo1HvS1LV9FRzAA'},
+    {"id": "8", "src":"../places/VIT (2).png", "desc":"VIT", "link":'https://photos.app.goo.gl/xAq2ngj8QE39MFPG6'}
 ]
 
 export const settings = {
