@@ -31,8 +31,8 @@ export const pins = [
     {"id": "2", "src":"../places/chennai (2).png", "desc":"Chennai", "link":'https://photos.app.goo.gl/ZeemviKwgM2REi7R6'},
     {"id": "3", "src":"../places/coorg (2).png", "desc":"Coorg", "link":'https://photos.app.goo.gl/ouQA11stQJfsECz78'},
     {"id": "4", "src":"../places/IITB(2).png", "desc":"IIT Bombay", "link":'https://photos.app.goo.gl/JiNDE9fRmMmdEyi5A'},
-    {"id": "5", "src":"../places/bangalore(2).png", "desc":"Banglore", "link":''},
-    {"id": "6", "src":"../places/delhi (2).png", "desc":"Delhi", "link":''},
+    {"id": "5", "src":"../places/bangalore(2).png", "desc":"Banglore", "link":'https://photos.app.goo.gl/6xQtuWL6ygXfHFe97'},
+    {"id": "6", "src":"../places/delhi (2).png", "desc":"Delhi", "link":'https://photos.app.goo.gl/khm4NNNweJ9YZmQYA'},
     {"id": "7", "src":"../places/lucknow (2).png", "desc":"Lucknow", "link":'https://photos.app.goo.gl/wgGo1HvS1LV9FRzAA'},
     {"id": "8", "src":"../places/VIT (2).png", "desc":"VIT", "link":'https://photos.app.goo.gl/xAq2ngj8QE39MFPG6'}
 ]
