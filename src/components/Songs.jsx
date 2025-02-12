@@ -44,7 +44,7 @@ export default function Songs() {
     }
   
     return (
-    <section className='min-h-screen flex flex-col gap-4 items-center bg-gradient-to-t p-2 from-black to-zinc-900 text-white '>
+    <section className='min-h-screen flex flex-col gap-4 items-center bg-gradient-to-t p-2 from-black to-zinc-900 text-white pb-30 md:pb-0'>
         <div className='rounded-[1rem] bg-[#1F1F1F] w-full flex flex-col items-center p-5'>
             <h1 className='heading text-[#1ED760] px-10 bg-slate-100 rounded-lg md:rounded-[5rem] w-fit '><i class="fa-solid fa-headphones-simple"></i> Song Library!</h1>
         </div>
